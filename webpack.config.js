@@ -5,7 +5,7 @@ const path = require("path"),
 
 const PATHS = {
   SRC: path.join(__dirname, "src"),
-  DIST: path.join(__dirname, "docs"),
+  DIST: path.join(__dirname),
 };
 
 module.exports = {
@@ -52,7 +52,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: path.resolve("index.html"),
+      template: path.resolve("./src/index.html"),
     })
   ]
 };
