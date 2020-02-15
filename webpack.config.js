@@ -9,13 +9,13 @@ const PATHS = {
 };
 
 module.exports = {
-  // mode: "development",
+  mode: "development",
   entry: {
     app: [PATHS.SRC],
   },
   output: {
     path: PATHS.DIST,
-    publicPath: "/",
+    publicPath: "./",
     filename: "js/[name].[chunkhash].bundle.js",
   },
   resolve: {
